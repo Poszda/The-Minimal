@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Playfair+Display&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img style="width:42px;" id="brand_logo" src="img/brand_logo.svg">
+            <div id="logo_name">THE MINIMAL</div>
+        </div>
+        <div class="dropdown_mobile" onclick="mobilenav()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="navbar">
+            <a href="index.html" class="navlink">Home</a>
+            <a href="shop.html" class="navlink">Shop</a>
+            <a href="#" class="navlink">About</a>
+            <a href="#" class="navlink">Services</a>
+            <a href="#" class="navlink">Contact</a>
+        </div>
+    </header>
+    <div class="section-0">
+            <h2>Shop Category<h2>  
+    </div>
+    <div class="section-1">
+    <div class="filter">
+        <div class="filter-item1">
+        <p class="title-filter">Browse Categories</p>
+        <input class ="radiobutton" type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input class ="radiobutton" type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input class ="radiobutton" type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br>
+        <input class ="radiobutton" type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input  class ="radiobutton"type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input class ="radiobutton" type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br>
+        </div>
+
+        <div class="filter-item2">
+            <p class="title-filter">Product Filters</p>
+            <p class="subtitle-filter"><b>Brands</b></p>
+            <input class ="radiobutton" type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input class ="radiobutton" type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input class ="radiobutton" type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+            <input class ="radiobutton" type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input  class ="radiobutton"type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input class ="radiobutton" type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            <div class="hr"></div>
+            <p class="subtitle-filter"><b>Colors</b></p>
+            <input class ="radiobutton" type="radio" id="male" name="gender" value="male">
+            <label for="male">Black</label><br>
+            <input class ="radiobutton" type="radio" id="male" name="gender" value="male">
+            <label for="male">White</label><br>
+            <input class ="radiobutton" type="radio" id="male" name="gender" value="male">
+            <label for="male">Green</label><br>
+            <input class ="radiobutton" type="radio" id="male" name="gender" value="male">
+            <label for="male">Yellow</label><br>
+            <div class="hr"></div>
+            <p class="subtitle-filter"><b>Price</b></p>
+            <div class="range"><input type="range" min="1" max="100" value="50" id="myRange"></div>
+        </div>
+        
+    </div>
+    <div class="products-container">
+    <div class="sorting">
+        <div class="sorting-left">
+                <select class="selector">
+                  <option value="0">Most Popular</option>
+                  <option value="1">Nice</option>
+                  <option value="2">BMW</option>
+                  <option value="3">Discount</option>
+                </select>
+                <select class="selector">
+                  <option value="0">Show 12</option>
+                  <option value="1">Show 24</option>
+                  <option value="2">Show 36</option>
+                </select>
+        </div>
+        <div class="sorting-right"><input type="text" placeholder="Search.."></div>
+    </div>
+    <div class="products">
+        <div class="product-card" onmouseover="goup(this)" onmouseout="godown(this)">
+            <div class="img1">
+                <img src="img/product3.jpg">
+                <div class="product-hover">
+                     <div class="cart-box">
+                         <img id ="ceva" style=" position: absolute;top:5px;left:5px;width:27px;height:27px;" src="img/search_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:2px;left:2px;width:30px;height:30px;" src="img/cart_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:5px;left:5px;width:27px;height:27px;" src="img/love_icon.svg">
+                     </div>
+               </div>
+             </div>
+             <div class="product-data">
+                 <h5>Accesories</h5>
+                 <h4>Quarts Belt Watch</h4>
+                 <p>150 $</p>
+             </div>
+         </div>
+         <div class="product-card" onmouseover="goup(this)" onmouseout="godown(this)">
+            <div class="img1">
+                <img src="img/product3.jpg">
+                <div class="product-hover">
+                     <div class="cart-box">
+                         <img id ="ceva" style=" position: absolute;top:5px;left:5px;width:27px;height:27px;" src="img/search_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:2px;left:2px;width:30px;height:30px;" src="img/cart_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:5px;left:5px;width:27px;height:27px;" src="img/love_icon.svg">
+                     </div>
+               </div>
+             </div>
+             <div class="product-data">
+                 <h5>Accesories</h5>
+                 <h4>Quarts Belt Watch</h4>
+                 <p>150 $</p>
+             </div>
+         </div>
+         <div class="product-card" onmouseover="goup(this)" onmouseout="godown(this)">
+            <div class="img1">
+                <img src="img/product3.jpg">
+                <div class="product-hover">
+                     <div class="cart-box">
+                         <img id ="ceva" style=" position: absolute;top:5px;left:5px;width:27px;height:27px;" src="img/search_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:2px;left:2px;width:30px;height:30px;" src="img/cart_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:5px;left:5px;width:27px;height:27px;" src="img/love_icon.svg">
+                     </div>
+               </div>
+             </div>
+             <div class="product-data">
+                 <h5>Accesories</h5>
+                 <h4>Quarts Belt Watch</h4>
+                 <p>150 $</p>
+             </div>
+         </div>
+         <div class="product-card" onmouseover="goup(this)" onmouseout="godown(this)">
+            <div class="img1">
+                <img src="img/product3.jpg">
+                <div class="product-hover">
+                     <div class="cart-box">
+                         <img id ="ceva" style=" position: absolute;top:5px;left:5px;width:27px;height:27px;" src="img/search_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:2px;left:2px;width:30px;height:30px;" src="img/cart_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:5px;left:5px;width:27px;height:27px;" src="img/love_icon.svg">
+                     </div>
+               </div>
+             </div>
+             <div class="product-data">
+                 <h5>Accesories</h5>
+                 <h4>Quarts Belt Watch</h4>
+                 <p>150 $</p>
+             </div>
+         </div>
+         <div class="product-card" onmouseover="goup(this)" onmouseout="godown(this)">
+            <div class="img1">
+                <img src="img/product3.jpg">
+                <div class="product-hover">
+                     <div class="cart-box">
+                         <img id ="ceva" style=" position: absolute;top:5px;left:5px;width:27px;height:27px;" src="img/search_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:2px;left:2px;width:30px;height:30px;" src="img/cart_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:5px;left:5px;width:27px;height:27px;" src="img/love_icon.svg">
+                     </div>
+               </div>
+             </div>
+             <div class="product-data">
+                 <h5>Accesories</h5>
+                 <h4>Quarts Belt Watch</h4>
+                 <p>150 $</p>
+             </div>
+         </div>
+         <div class="product-card" onmouseover="goup(this)" onmouseout="godown(this)">
+            <div class="img1">
+                <img src="img/product3.jpg">
+                <div class="product-hover">
+                     <div class="cart-box">
+                         <img id ="ceva" style=" position: absolute;top:5px;left:5px;width:27px;height:27px;" src="img/search_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:2px;left:2px;width:30px;height:30px;" src="img/cart_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:5px;left:5px;width:27px;height:27px;" src="img/love_icon.svg">
+                     </div>
+               </div>
+             </div>
+             <div class="product-data">
+                 <h5>Accesories</h5>
+                 <h4>Quarts Belt Watch</h4>
+                 <p>150 $</p>
+             </div>
+         </div>
+         <div class="product-card" onmouseover="goup(this)" onmouseout="godown(this)">
+            <div class="img1">
+                <img src="img/product3.jpg">
+                <div class="product-hover">
+                     <div class="cart-box">
+                         <img id ="ceva" style=" position: absolute;top:5px;left:5px;width:27px;height:27px;" src="img/search_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:2px;left:2px;width:30px;height:30px;" src="img/cart_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:5px;left:5px;width:27px;height:27px;" src="img/love_icon.svg">
+                     </div>
+               </div>
+             </div>
+             <div class="product-data">
+                 <h5>Accesories</h5>
+                 <h4>Quarts Belt Watch</h4>
+                 <p>150 $</p>
+             </div>
+         </div>
+         <div class="product-card" onmouseover="goup(this)" onmouseout="godown(this)">
+            <div class="img1">
+                <img src="img/product3.jpg">
+                <div class="product-hover">
+                     <div class="cart-box">
+                         <img id ="ceva" style=" position: absolute;top:5px;left:5px;width:27px;height:27px;" src="img/search_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:2px;left:2px;width:30px;height:30px;" src="img/cart_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:5px;left:5px;width:27px;height:27px;" src="img/love_icon.svg">
+                     </div>
+               </div>
+             </div>
+             <div class="product-data">
+                 <h5>Accesories</h5>
+                 <h4>Quarts Belt Watch</h4>
+                 <p>150 $</p>
+             </div>
+         </div>
+    </div>
+    <div class="nextpage">
+        <div class="nextitem item-1">1</div>
+        <div class="nextitem item-1">2</div>
+        <div class="nextitem item-1">3</div>
+        <div class="nextitem item-1">...</div>
+        <div class="nextitem item-1">35</div>
+    </div>
+    </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="section-2">
+        <div class="section2-col"></div>
+        <div class="section2-col"></div>
+        <div class="section2-col"></div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="subscribe">
+            <div class="subscribe_content">
+            <h1>GET UPDATE FROM ANYWHERE</h1>
+            <p>Bearing Void gathering light light his eavening unto dont afraid</p>
+            <input type="email" id="email" name="email" multiple>
+            <input type="submit" id="submit" value="Subscribe Now">
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="item-1">
+                <p id="ourstory">Our Story</p>
+                <p id ="ourstory2">So seed seed green that winged cattle in. Gathering thing made fly you're no divided deep
+                     moved us lan Gathering thing us land years living. So seed seed green 
+                    that winged cattle in. Gathering thing made fly you're no divided deep moved</p>
+            </div>
+            <div class="item-2">
+                <p>Support</p>
+                <a>Contact Us</a>
+                <a>FAQ</a>
+                <a>Product registration</a>
+                <a>Pricing</a>
+            </div>
+            <div class="item-3">
+                <p>Visit</p>
+                <a>The Minimalist So. California</a>
+                <a>4 East Canterbury</a>
+                <a>St.Anaheim, CA 92801</a>
+                <a>USA</a>
+            </div>
+            <div class="item-4">
+                <p>Social</p>
+                <a>Blog</a>
+                <a>Twitter</a>
+                <a>Youtube</a>
+                <a>Facebook</a>
+            </div>
+        </div>
+        <div class="hr2"></div>
+        <div class="copyright"><div class="cpyrght">Copyright ©2021. All rights reserved.</div></div>
+    </footer>
+
+</body>
+<script>
+        //MOBILE MENU
+        const header = document.querySelector("header");
+        const dropdown = document.querySelector(".dropdown_mobile");
+        function mobilenav(){
+            dropdown.classList.toggle("active");
+            header.classList.toggle("headerr");
+
+        }
+        window.addEventListener("scroll",function(){
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+             header.style.position = "fixed";
+             header.style.backgroundColor = "black";
+             header.querySelector("#logo_name").style.color="white";
+             header.querySelectorAll(".navlink").forEach(element => element.style.color="white");
+             document.querySelector("#brand_logo").src="img/brand_logo_negative.svg";
+             dropdown.querySelectorAll(".bar").forEach(element => element.style.backgroundColor="white");
+
+            } else {
+                header.style.position = "static";
+                header.style.backgroundColor = "white";
+                header.querySelector("#logo_name").style.color="black";
+                header.querySelectorAll(".navlink").forEach(element => element.style.color="black");
+                document.querySelector("#brand_logo").src="img/brand_logo.svg";
+                dropdown.querySelectorAll(".bar").forEach(element => element.style.backgroundColor="black");
+             }
+        });
+        
+    //PRODUCTS HOVER
+ function goup(product){
+    product.querySelector(".product-hover").style.height="100px";
+}
+function godown(product){
+    product.querySelector(".product-hover").style.height="0px";
+}
+</script>
+</html>

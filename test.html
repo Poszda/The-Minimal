@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .totul{
+            background-color: saddlebrown;
+            display:flex;
+        }
+        .altceva{
+            width: 250px;
+            height: 100vh;
+            background-color: purple;
+        }
+        .alt{
+            padding: 1em;
+            width:100%;
+            background-color: tomato;
+        }
+        .ceva{
+            background-color: red;
+            display: grid;
+            grid-template-columns: repeat( auto-fit, minmax(220px, 1fr));
+/*             grid-auto-rows: 500px; */
+            grid-gap:1em;
+        }
+        .ceva0{
+            background-color: teal;
+        }
+        .ceva1{
+            background-color: blue;
+        }
+        .ceva2{
+            background-color: green;
+        }
+        .ceva3{
+            background-color: fuchsia;
+        }
+.product-card{
+    box-sizing: border-box;
+    background-color: white;
+    width:100%; 
+
+}
+.product-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+.product-card img{
+    width: 100%; 
+}
+.subtitles h2{
+    margin: 10px 0px;
+}
+.product-data{
+    text-align: center;
+    line-height: 0px;
+}
+.product-hover{
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    bottom:0;
+    background-color: rgba(255, 255, 255, 0.486);;
+    text-align: center;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.img1{
+    position: relative;
+}
+.cart-box{
+    position: relative; /* relative + obiect absolut = obiect absolut care se plimba in obiectul relativ */
+    display: inline-block;
+    left:5px;
+    top:35px;
+    right:5px;
+    width: 35px;
+    height: 35px;
+    background-color: #927EC9;
+}
+.product-hover :hover{
+    background-color: #6247AA;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="totul">
+    <div class="altceva"></div>
+    <div class="alt">
+    <div class="ceva0"><h3>Search products</h3></div>
+    <div class="ceva">
+        <div class="product-card " onmouseover="goup(this)" onmouseout="godown(this)">
+            <div class="img1">
+                <img src="/img/product3.jpg">
+                <div class="product-hover">
+                     <div class="cart-box">
+                         <img id ="ceva" style=" position: absolute;top:5px;left:5px;width:27px;height:27px;" src="/img/search_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:2px;left:2px;width:30px;height:30px;" src="/img/cart_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:5px;left:5px;width:27px;height:27px;" src="/img/love_icon.svg">
+                     </div>
+               </div>
+             </div>
+             <div class="product-data">
+                 <h5>Accesories</h5>
+                 <h4>Quarts Belt Watch</h4>
+                 <p>150 $</p>
+             </div>
+         </div>
+         <div class="product-card " onmouseover="goup(this)" onmouseout="godown(this)">
+            <div class="img1">
+                <img src="/img/product3.jpg">
+                <div class="product-hover">
+                     <div class="cart-box">
+                         <img id ="ceva" style=" position: absolute;top:5px;left:5px;width:27px;height:27px;" src="/img/search_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:2px;left:2px;width:30px;height:30px;" src="/img/cart_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:5px;left:5px;width:27px;height:27px;" src="/img/love_icon.svg">
+                     </div>
+               </div>
+             </div>
+             <div class="product-data">
+                 <h5>Accesories</h5>
+                 <h4>Quarts Belt Watch</h4>
+                 <p>150 $</p>
+             </div>
+         </div>
+         <div class="product-card " onmouseover="goup(this)" onmouseout="godown(this)">
+            <div class="img1">
+                <img src="/img/product3.jpg">
+                <div class="product-hover">
+                     <div class="cart-box">
+                         <img id ="ceva" style=" position: absolute;top:5px;left:5px;width:27px;height:27px;" src="/img/search_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:2px;left:2px;width:30px;height:30px;" src="/img/cart_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:5px;left:5px;width:27px;height:27px;" src="/img/love_icon.svg">
+                     </div>
+               </div>
+             </div>
+             <div class="product-data">
+                 <h5>Accesories</h5>
+                 <h4>Quarts Belt Watch</h4>
+                 <p>150 $</p>
+             </div>
+         </div>
+         <div class="product-card " onmouseover="goup(this)" onmouseout="godown(this)">
+            <div class="img1">
+                <img src="/img/product3.jpg">
+                <div class="product-hover">
+                     <div class="cart-box">
+                         <img id ="ceva" style=" position: absolute;top:5px;left:5px;width:27px;height:27px;" src="/img/search_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:2px;left:2px;width:30px;height:30px;" src="/img/cart_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:5px;left:5px;width:27px;height:27px;" src="/img/love_icon.svg">
+                     </div>
+               </div>
+             </div>
+             <div class="product-data">
+                 <h5>Accesories</h5>
+                 <h4>Quarts Belt Watch</h4>
+                 <p>150 $</p>
+             </div>
+         </div>
+         <div class="product-card " onmouseover="goup(this)" onmouseout="godown(this)">
+            <div class="img1">
+                <img src="/img/product3.jpg">
+                <div class="product-hover">
+                     <div class="cart-box">
+                         <img id ="ceva" style=" position: absolute;top:5px;left:5px;width:27px;height:27px;" src="/img/search_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:2px;left:2px;width:30px;height:30px;" src="/img/cart_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:5px;left:5px;width:27px;height:27px;" src="/img/love_icon.svg">
+                     </div>
+               </div>
+             </div>
+             <div class="product-data">
+                 <h5>Accesories</h5>
+                 <h4>Quarts Belt Watch</h4>
+                 <p>150 $</p>
+             </div>
+         </div>
+         <div class="product-card " onmouseover="goup(this)" onmouseout="godown(this)">
+            <div class="img1">
+                <img src="/img/product3.jpg">
+                <div class="product-hover">
+                     <div class="cart-box">
+                         <img id ="ceva" style=" position: absolute;top:5px;left:5px;width:27px;height:27px;" src="/img/search_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:2px;left:2px;width:30px;height:30px;" src="/img/cart_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:5px;left:5px;width:27px;height:27px;" src="/img/love_icon.svg">
+                     </div>
+               </div>
+             </div>
+             <div class="product-data">
+                 <h5>Accesories</h5>
+                 <h4>Quarts Belt Watch</h4>
+                 <p>150 $</p>
+             </div>
+         </div>
+         <div class="product-card " onmouseover="goup(this)" onmouseout="godown(this)">
+            <div class="img1">
+                <img src="/img/product3.jpg">
+                <div class="product-hover">
+                     <div class="cart-box">
+                         <img id ="ceva" style=" position: absolute;top:5px;left:5px;width:27px;height:27px;" src="/img/search_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:2px;left:2px;width:30px;height:30px;" src="/img/cart_icon.svg">
+                     </div>
+                     <div class="cart-box">
+                         <img style=" position: absolute; top:5px;left:5px;width:27px;height:27px;" src="/img/love_icon.svg">
+                     </div>
+               </div>
+             </div>
+             <div class="product-data">
+                 <h5>Accesories</h5>
+                 <h4>Quarts Belt Watch</h4>
+                 <p>150 $</p>
+             </div>
+         </div>
+    </div>
+    </div>
+    </div>
+</body>
+<script>
+    console.log(`The bill was ${275} , the tip was ${275>0 && 275<300 ? 0.15*275 : 0.2*275} and the total value was ${275 + (275>0 && 275<300 ? 0.15*275 : 0.2*275) }`)
+</script>
+</html>
