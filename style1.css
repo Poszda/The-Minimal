@@ -245,7 +245,7 @@ overflow: hidden;
 .carousel{
 box-sizing: border-box;
 width:100%;
-height: 400px;
+min-height: 400px;
 display: flex;
 }
 .carousel-text{ 
@@ -300,6 +300,8 @@ width: 400px;
 height: 35px;
 border-radius: 20px;
 border:solid 1px rgb(190, 184, 184);
+padding-left: 20px;
+outline: none;
 }
 .subscribe_content #submit{
     display: inline;
